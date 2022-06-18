@@ -37,14 +37,14 @@ const Coins = () => {
         onChange={changeHandler}
       />
       {coins.length ? (
-        <div>
+        <div className={styles.coin__wrapper}  >
           {filteredCoins.map((coin) => (
             <Coin
               key={coin.id}
               name={coin.name}
               image={coin.image}
               marketCap={coin.market_cap}
-              marketCapRank={coin.market_cap_rank}
+              priceChange={coin.price_change_percentage_24h}
               symbol={coin.symbol}
               totalVolume={coin.total_volume}
             />

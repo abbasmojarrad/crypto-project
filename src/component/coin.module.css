@@ -3,13 +3,43 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  margin: 1rem 0;
-  gap: 0 1rem;
-  border-radius: 1rem;
+  border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.18);
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.18);
 }
 .coin__container img {
   width: 40px;
+}
+
+.coin__items {
+  width: 20%;
+  margin: 0 1rem;
+}
+.name {
+  font-weight: bold;
+}
+.green__price,
+.red__price {
+  font-weight: bold;
+}
+.green__price {
+  color: rgb(0, 132, 40);
+}
+.red__price {
+  color: rgb(128, 0, 0);
+}
+@media only screen and (max-width: 768px) {
+  .coin__container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .coin__container img {
+    width: 80px;
+  }
+  .coin__items {
+    width: 70%;
+    margin: 1rem;
+  }
 }
